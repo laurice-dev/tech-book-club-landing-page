@@ -3,67 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Tech book club</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="container">
-          <nav><img class="nav__logo" src="/assets/images/logo.svg" alt="book with git icon" /></nav>
-          <div class="hero">
-            <div class="hero__content">
-              <h1>Join the ultimate tech book club</h1>
-              <p class="hero__content--text">
-                Join the ultimate tech book club Turn your reading time into learning time with fellow tech enthusiasts.
-                Get curated recommendations, join vibrant discussions, and level up your skills one chapter at a time.
-              </p>
-              <a href="#" class="button" target="_self"
-                >Review membership options&nbsp;<img class="button__icon" src="/assets/images/icon-arrow-down.svg" alt="arrow pointing down"
-              /></a>
-              <div class="social-proof">
-                <img class="social-proof__image" src="/assets/images/image-avatars.webp" alt="three men who are smiling" />
-                <div class="social-proof__stats">
-                  <img class="social-proof__stars" src="/assets/images/icon-star.svg" alt="star" />
-                  <img class="social-proof__stars" src="/assets/images/icon-star.svg" alt="star" />
-                  <img class="social-proof__stars" src="/assets/images/icon-star.svg" alt="star" />
-                  <img class="social-proof__stars" src="/assets/images/icon-star.svg" alt="star" />
-                  <img class="social-proof__stars" src="/assets/images/icon-star.svg" alt="star" />
-                  <p>200+ developers joined already</p>
-                </div>
-                <!--social proof: end-->
+    <header>
+      <div class="container">
+        <nav><img class="nav__logo" src="/assets/images/logo.svg" alt="book with git icon" /></nav>
+        <div class="hero">
+          <div class="hero__content">
+            <h1>Join the ultimate tech book club</h1>
+            <p class="hero__content--text">
+              Join the ultimate tech book club Turn your reading time into learning time with fellow tech enthusiasts.
+              Get curated recommendations, join vibrant discussions, and level up your skills one chapter at a time.
+            </p>
+            <a href="#" class="button" target="_self"
+              >Review membership options&nbsp;<img
+                class="button__icon"
+                src="/assets/images/icon-arrow-down.svg"
+                alt="arrow pointing down"
+            /></a>
+            <div class="social-proof">
+              <div class="social-proof__image">
+                <img src="/assets/images/image-avatars.webp" alt="three men who are smiling" />
               </div>
-              <!--hero content: end-->
+              <div class="social-proof__stats">
+                <img class="social-proof__star" src="/assets/images/icon-star.svg" alt="star" /><img
+                  class="social-proof__star"
+                  src="/assets/images/icon-star.svg"
+                  alt="star"
+                /><img class="social-proof__star" src="/assets/images/icon-star.svg" alt="star" /><img
+                  class="social-proof__star"
+                  src="/assets/images/icon-star.svg"
+                  alt="star"
+                /><img class="social-proof__star" src="/assets/images/icon-star.svg" alt="star" />
+                <p>200+ developers joined already</p>
+              </div>
+              <!--social proof: end-->
             </div>
-              <picture>
-                <source srcset="/assets/images/image-hero-tablet.webp" media="(max-width: 768px)" />
-                <source srcset="/assets/images/image-hero-mobile.webp" media="(max-width: 375px)" />
-                <img class="hero__image" src="/assets/images/image-hero-desktop.webp" alt="group of young adults looking at books" />
-              </picture>
-            <!--hero: end-->
+            <!--hero content: end-->
           </div>
+          <!--hero image: start -->
+          <picture>
+            <source srcset="/assets/images/image-hero-tablet.webp" media="(max-width: 768px)" />
+
+            <source srcset="/assets/images/image-hero-mobile.webp" media="(max-width: 375px)" />
+            <img
+              class="hero__image"
+              src="/assets/images/image-hero-desktop.webp"
+              width="1072"
+              height="1212"
+              alt="group of young adults looking at books"
+            />
+          </picture>
+          <!--hero: end-->
         </div>
-      </header>
+      </div>
+    </header>
+    <div class="wrapper">
       <main>
         <div class="container">
-          <section id="features">
+          <section class="features">
             <!--feature left: start-->
-            <div class="feature">
-              <div class="feature_image--left">
-                <picture
-                  ><source srcset="/assets/images/image-read-together-tablet.webp" media="(max-width: 768px)" />
-                  <source srcset="/assets/images/image-read-together-tablet.webp" media="(max-width: 375px)" />
-                  <img
-                    src="/assets/images/image-read-together-desktop.webp"
-                    alt="group of men and women sitting together and reading"
-                /></picture>
-              </div>
-              <div class="feature__content">
+            <div class="feature__left">
+              <picture>
+                <source media="(max-width:1024px)" srcset="/assets/images/image-read-together-tablet.webp" />
+                <source media="(max-width: 375px)" srcset="/assets/images/image-read-together-mobile.webp" />
+                <img
+                  class="feature_image--left"
+                  src="/assets/images/image-read-together-desktop.webp"
+                  width="1120"
+                  height="1040"
+                  alt="group of men and women sitting together and reading"
+                />
+              </picture>
+              <div class="feature__left-content">
                 <h2>Read together, grow together</h2>
-                <div class="feature__grid">
+                <div class="feature__left-grid">
                   <img src="/assets/images/icon-check.svg" alt="check box" />
                   <p>Monthly curated tech reads selected by industry experts</p>
                   <img src="/assets/images/icon-check.svg" alt="check box" />
@@ -77,137 +99,151 @@
             </div>
             <!--feature-right: start-->
             <div class="feature__right">
-              <div class="feature__content">
-                <h2>Not your average book club</h2>
-                <p>Connect with a community that speaks your language - from Python to TypeScript and everything in between. Our discussions blend technical depth with practical applications.</p>
+              <div class="feature__right-content">
+                <h2>
+                  Not your average book
+                  <span>club<img class="feature__right-circle" src="/assets/images/pattern-circle.png" alt="" /></span>
+                </h2>
+                <p>
+                  Connect with a community that speaks your language - from <strong>Python</strong> to
+                  <strong>TypeScript</strong> and everything in between. Our discussions blend technical depth with
+                  practical applications.
+                </p>
               </div>
-              <div class="feature__image--right">
-                <picture>
-                  <source srcset="/assets/images/image-not-average-tablet.webp" media="(max-width: 768px)" />
-                  <source srcset="/assets/images/image-not-average-mobile.webp" media="(max-width: 375px)" />
-                  <img
-                    src="/assets/images/image-not-average-desktop.webp"
-                    alt="group of men and women sitting together and reading"/>
-                </picture>
-              </div>
+              <picture>
+                <source srcset="/assets/images/image-not-average-tablet.webp" media="(max-width: 768px)" />
+                <source srcset="/assets/images/image-not-average-mobile.webp" media="(max-width: 375px)" />
+                <img
+                  class="feature_image--right"
+                  src="/assets/images/image-not-average-desktop.webp"
+                  alt="group of men and women sitting together and reading"
+                />
+              </picture>
             </div>
           </section>
           <!--callout: start-->
-          <section id="callout">
-              <h2>Your tech reading journey</h2>
+          <section class="callout">
+            <h2>Your tech reading journey</h2>
+            <div class="callout__container">
               <!--step 1: start-->
               <div class="callout__step">
-              <div class="callout__numbered-box">1</div>
-              <img class="callout__icon" src="/assets/images/pattern-arrow.svg" alt="check-box--large">
-              <p>Choose your membership tier</p>
+                <div class="callout__numbered-box">1</div>
+                <img class="check-box--large" src="/assets/images/pattern-arrow.svg" alt="check-box--large" />
+                <p>Choose your membership tier</p>
               </div>
               <!--step 2: start-->
               <div class="callout__step">
-              <div class="callout__numbered-box">1</div>
-              <img class="check-box--large" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-              <p>Get your monthly book selection</p>
+                <div class="callout__numbered-box">1</div>
+                <img class="check-box--large" src="/assets/images/pattern-arrow.svg" alt="curved arrow" />
+                <p>Get your monthly book selection</p>
               </div>
               <!--step 3: start-->
               <div class="callout__step">
-              <div class="callout__numbered-box">3</div>
-              <img class="check-box--large" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-              <p>Join our discussion forums</p>
-              </div><!--step 4: start-->
+                <div class="callout__numbered-box">3</div>
+                <img class="check-box--large" src="/assets/images/pattern-arrow.svg" alt="curved arrow" />
+                <p>Join our discussion forums</p>
+              </div>
+              <!--step 4: start-->
               <div class="callout__step">
-              <div class="callout__numbered-box">4</div>
-              <img class="check-box--large" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-              <p>Attend exclusive meetups</p>
+                <div class="callout__numbered-box">4</div>
+                <p>Attend exclusive meetups</p>
               </div>
+            </div>
           </section>
-          <section id="membership">
+          <section class="membership">
             <h2>Membership options</h2>
-            <!--membership 1: start-->
             <div class="membership__container">
-              <div class="membership">
+              <!--membership 1: start-->
+              <div class="membership__option">
                 <h3>Starter</h3>
-                <span>$19</span><span>/month</span>
+                <span><span class="membership__price">$19</span> <span>/month</span></span>
+                <div class="membership__divider">&zwnj;</div>
                 <div class="membership__benefits">
-                <img class="check-box--small" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-                <span>1 book/month</span>
-                <img class="check-box--small" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-                <span>Online forums</span>
+                  <img src="/assets/images/icon-check.svg" alt="check box" /> <span>1 book/month</span>
+                  <img src="/assets/images/icon-check.svg" alt="check box" /> <span>Online forums</span>
+                </div>
+                <a href="#" class="button">Subscribe now</a>
               </div>
-              <a href="#" class="button">Subscribe now</a>
-            </div>
-            <!--membership 2: start-->
-            <div class="membership__container">
-              <div class="membership">
+              <!--membership 2: start-->
+              <div class="membership__option">
                 <h3>Pro</h3>
-                <span>$29</span><span>/month</span>
+                <span><span class="membership__price">$29</span> <span>/month</span></span>
+                <div class="membership__divider">&zwnj;</div>
                 <div class="membership__benefits">
-                <img class="check-box--small" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-                <span>2 books/month</span>
-                <img class="check-box--small" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-                <span>Virtual meetups</span>
+                  <img src="/assets/images/icon-check.svg" alt="check box" />
+                  <span>2 books/month</span>
+                  <img src="/assets/images/icon-check.svg" alt="check box" />
+                  <span>Virtual meetups</span>
+                </div>
+                <a href="#" class="button">Subscribe now</a>
               </div>
-              <a href="#" class="button">Subscribe now</a>
-            </div>
-            <!--membership 3: start-->
-            <div class="membership__container">
-              <div class="membership">
+              <!--membership 3: start-->
+              <div class="membership__option">
                 <h3>Enterprise</h3>
-                <span>Custom</span>
+                <span class="membership__price">Custom</span>
+                <div class="membership__divider">&zwnj;</div>
                 <div class="membership__benefits">
-                <img class="check-box--small" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-                <span>Team access</span>
-                <img class="check-box--small" src="/assets/images/pattern-arrow.svg" alt="curved arrow">
-                <span>Private sessions</span>
+                  <img src="/assets/images/icon-check.svg" alt="check box" />
+                  <span>Team access</span>
+                  <img src="/assets/images/icon-check.svg" alt="check box" />
+                  <span>Private sessions</span>
+                </div>
+                <a href="#" class="button">Talk to us</a>
               </div>
-              <a href="#" class="button">Talk to us</a>
             </div>
           </section>
           <!--testimonials: start-->
           <section id="testimonials">
             <div class="testimonial__container">
               <div class="testimonail__star-rating">
-                  <img src="/assets/images/icon-star.svg" alt="star" />
-                  <img src="/assets/images/icon-star.svg" alt="star" />
-                  <img src="/assets/images/icon-star.svg" alt="star" />
-                  <img src="/assets/images/icon-star.svg" alt="star" />
-                  <img src="/assets/images/icon-star.svg" alt="star" />
-                  <h3 class="testimonial__text">"This book club transformed my technical reading from a solitary activity into an enriching community experience. The discussions are gold!"</h3>
-                  <p class="testimonial__author">Sarah Chen, Software Architect</p>
+                <img src="/assets/images/icon-star.svg" alt="star" />
+                <img src="/assets/images/icon-star.svg" alt="star" />
+                <img src="/assets/images/icon-star.svg" alt="star" />
+                <img src="/assets/images/icon-star.svg" alt="star" />
+                <img src="/assets/images/icon-star.svg" alt="star" />
+                <h3 class="testimonial__text">
+                  "This book club transformed my technical reading from a solitary activity into an enriching community
+                  experience. The discussions are gold!"
+                </h3>
+                <p class="testimonial__author">Sarah Chen, Software Architect</p>
               </div>
             </div>
           </section>
         </div>
       </main>
       <footer>
-          <section id="footer-cta">
+        <section id="footer-cta">
+          <div class="container">
+            <h3>Ready to debug your reading list?</h3>
+            <a href="#" class="button"
+              >Revieww membership options&nbsp;<img src="/assets/images/icon-arrow-up.svg" alt="arrow pointing up"
+            /></a>
+            <div class="footer-cta__social-proof"></div>
+            <img src="/assets/images/image-avatars.webp" alt="three men who are smiling" />
+            <div class="footer-cta__social-proof-stats">
+              <img src="/assets/images/icon-star.svg" alt="star" />
+              <img src="/assets/images/icon-star.svg" alt="star" />
+              <img src="/assets/images/icon-star.svg" alt="star" />
+              <img src="/assets/images/icon-star.svg" alt="star" />
+              <img src="/assets/images/icon-star.svg" alt="star" />
+              <p>200+ developers joined already</p>
+            </div>
+            <!--footer-cta: end-->
+          </div>
+          <div class="footer-nav">
             <div class="container">
-              <h3>Ready to debug your reading list?</h3>
-              <a href="#" class="button">Review membership options <img src="/assets/images/icon-arrow-up.svg" alt="arrow pointing up"></a>
-              <div class="footer-cta__social-proof"></div>
-              <img src="/assets/images/image-avatars.webp" alt="three men who are smiling" />
-              <div class="footer-cta__social-proof-stats">
-                <img src="/assets/images/icon-star.svg" alt="star" />
-                <img src="/assets/images/icon-star.svg" alt="star" />
-                <img src="/assets/images/icon-star.svg" alt="star" />
-                <img src="/assets/images/icon-star.svg" alt="star" />
-                <img src="/assets/images/icon-star.svg" alt="star" />
-                <p>200+ developers joined already</p>
+              <p class="footer-nav__copywright">© 2025 - Tech Book Club</p>
+              <div class="footer-nav__social-icons">
+                <img class="footer-nav__social-icon" src="/assets/images/logo-bluesky.svg" alt="butterfly" />
+                <img class="footer-nav__social-icon" src="/assets/images/logo-linkedin.svg" alt="linkedin logo" />
               </div>
-              <!--footer-cta: end-->
+              <!--social icons: end-->
             </div>
-            <div class="footer-nav">
-              <div class="container">
-                <p class="footer-nav__copywright">© 2025 - Tech Book Club</p>
-                <div class="footer-nav__social-icons">
-                  <img class="footer-nav__social-icon" src="/assets/images/logo-bluesky.svg" alt="butterfly">
-                  <img class="footer-nav__social-icon" src="/assets/images/logo-linkedin.svg" alt="linkedin logo">
-                </div>
-                <!--social icons: end-->
-              </div>
-              <!--footer container: end-->
-            </div>
-            <!--footer nav: end-->
-          </section>
-        </footer>
+            <!--footer container: end-->
+          </div>
+          <!--footer nav: end-->
+        </section>
+      </footer>
     </div>
   </body>
 </html>
