@@ -114,11 +114,12 @@
                 <source srcset="/assets/images/image-not-average-tablet.webp" media="(max-width: 768px)" />
                 <source srcset="/assets/images/image-not-average-mobile.webp" media="(max-width: 375px)" />
                 <img
-                  class="feature_image--right"
+                  class="feature__right-image"
                   src="/assets/images/image-not-average-desktop.webp"
                   alt="group of men and women sitting together and reading"
                 />
               </picture>
+              <img class="feature__right-image--overlay" src="/assets/images/logos-tech.svg" alt="">
             </div>
           </section>
           <!--callout: start-->
@@ -215,39 +216,41 @@
           </section>
         </div>
       </main>
-      <footer>
-        <section id="footer-cta">
-          <div class="container">
-            <h2>Ready to debug your reading list?</h2>
-            <a href="#" class="button"
-              >Revieww membership options&nbsp;<img src="/assets/images/icon-arrow-up.svg" alt="arrow pointing up"
-            /></a>
-            <div class="footer-cta__social-proof"></div>
-            <img src="/assets/images/image-avatars.webp" alt="three men who are smiling" />
-            <div class="footer-cta__social-proof-stats">
-              <img src="/assets/images/icon-star.svg" alt="star" />
-              <img src="/assets/images/icon-star.svg" alt="star" />
-              <img src="/assets/images/icon-star.svg" alt="star" />
-              <img src="/assets/images/icon-star.svg" alt="star" />
-              <img src="/assets/images/icon-star.svg" alt="star" />
-              <p>200+ developers joined already</p>
+      <footer class="footer">
+        <section class="footer-cta">
+          <div class="footer-cta__container">
+            <div class="footer-cta__content">
+              <h2>Ready to debug your reading list?</h2>
+              <a href="#" class="ghost-button"
+                >Review membership options&nbsp;<img src="/assets/images/icon-arrow-up.svg" alt="arrow pointing up"
+              /></a>
+              <div class="footer-cta__social-proof">
+                <img
+                  class="footer-cta__social-proof-image"
+                  src="/assets/images/image-avatars.webp"
+                  alt="three men who are smiling"
+                />
+                <div class="footer-cta__social-proof-stats">
+                  <img class="footer-cta__social-proof-star" src="/assets/images/icon-star.svg" alt="star" /><img class="footer-cta__social-proof-star" src="/assets/images/icon-star.svg" alt="star" /><img class="footer-cta__social-proof-star" src="/assets/images/icon-star.svg" alt="star" /><img class="footer-cta__social-proof-star" src="/assets/images/icon-star.svg" alt="star" /><img class="footer-cta__social-proof-star" src="/assets/images/icon-star.svg" alt="star" />
+                  <p>200+ developers joined already</p>
+                </div>
             </div>
             <!--footer-cta: end-->
           </div>
           <div class="footer-nav">
-            <div class="container">
-              <p class="footer-nav__copywright">© 2025 - Tech Book Club</p>
-              <div class="footer-nav__social-icons">
-                <img class="footer-nav__social-icon" src="/assets/images/logo-bluesky.svg" alt="butterfly" />
-                <img class="footer-nav__social-icon" src="/assets/images/logo-linkedin.svg" alt="linkedin logo" />
-              </div>
-              <!--social icons: end-->
+          <div class="footer-nav__container">
+            <p class="footer-nav__copywright">© 2025 - Tech Book Club</p>
+            <div class="footer-nav__social-icons">
+              <img class="footer-nav__social-icon" src="/assets/images/logo-bluesky.svg" alt="butterfly bluesky logo" /><img class="footer-nav__social-icon" src="/assets/images/logo-linkedin.svg" alt="linkedin logo" />
             </div>
-            <!--footer container: end-->
+            <!--social icons: end-->
           </div>
-          <!--footer nav: end-->
+          <!--footer container: end-->
+        </div>
+        <!--footer nav: end-->
         </section>
       </footer>
     </div>
+    <!-- wrapper: end -->
   </body>
 </html>
