@@ -245,10 +245,16 @@ nav {
 .hero {
   display: flex;
   flex-flow: row wrap;
+  padding-top: 50px;
 
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: var(--sp-800-64);
+    padding-top: 34px;
+  }
+
+  @media (max-width: 800px) {
+    padding-top: 0;
   }
 }
 
