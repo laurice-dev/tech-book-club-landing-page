@@ -95,7 +95,6 @@ ol[role="list"] {
   list-style: none;
 }
 
-/* TO DO: Update h1 font size */
 h1 {
   font-family: var(--ff-martian-mono);
   font-size: var(--fs-xxxxl-60);
