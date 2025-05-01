@@ -185,13 +185,13 @@ h3 {
   padding-inline: var(--sp-300-24);
   border: var(--sp-025-2) solid var(--clr-neutral-900);
   border-radius: var(--sp-100-8);
-  background: var(--clr-neutral-200);
+  background: var(--clr-accent-50);
 
   font-family: var(--ff-martian-mono);
   font-size: 1rem;
   font-weight: var(--fw-sb-600);
   line-height: 1.3;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   text-transform: uppercase;
   text-wrap: nowrap;
   color: var(--clr-neutral-900);
